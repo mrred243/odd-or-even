@@ -22,7 +22,7 @@ const GameState = ({ remaining, correctGuesses }) => {
 
   return (
     <div>
-      <h3>{recordLabel}: {record}</h3>
+      <h3><strong>{recordLabel}: {record}</strong></h3>
       <p>{remaining} cards remaining</p>
       <p>{correctGuesses} correct {guessText}</p>
     </div>

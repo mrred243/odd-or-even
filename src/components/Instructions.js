@@ -7,8 +7,9 @@ const Instructions = props => {
 
   if (instructionsExpanded) {
     return (
-      <div>
-          <h3>Instructions</h3>
+      <div className="instruction">
+          <h3><strong>Instructions</strong></h3>
+          <br/>
           <p>Welcome to Evens and Odds.</p>
           <p>The desk is shuffled. Then choose: Will the next card be even or odd?</p>
           <p>Make a choice on every draw, and see how many you get right.</p>
@@ -18,8 +19,9 @@ const Instructions = props => {
       </div> )
     }
     return (
-      <div>
-          <h3>Instructions</h3>
+      <div className="instruction">
+          <h3><strong>Instructions</strong></h3>
+          <br/>
           <p>Welcome to Evens and Odds...</p>
           <br/>
           <button onClick={expandInstructions}>Read more</button>

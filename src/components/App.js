@@ -8,6 +8,7 @@ import Drawcard from './Drawcard';
 import Card from './Card';
 import Guess from './Guess';
 import GameState from './GameState';
+import '../index.scss';
 
 
 class App extends Component {
@@ -32,33 +33,34 @@ class App extends Component {
     }
 
     return (
-      <div>
-          <h2>Evens and Odds</h2>
+      <div style={{height: '100%'}}>
+          <div className="header">
+            <h1>Odds and Evens</h1>
+          </div>
+          <div className="main">
+          <Instructions/>
           {
             this.props.gameStarted ? (
-              <div>
-                  <h3>Game is on.</h3>
-                  <br/>
+              <div className="item section__game">
+                  <div >
+                  <h3><strong>Game is on!</strong></h3>
+                  <button onClick={this.props.cancelGame}>Cancel Game</button>
                   <GameState />
-                  <br/>
                   <Guess />
                   <br/>
                   <Drawcard />
-                  <hr/>
+                  </div>
                   <Card />
-                  <hr/>
-                  <button onClick={this.props.cancelGame}>Cancel Game</button>
               </div>
             ) : (
-              <div>
-                  <h3>New game awaits</h3>
+              <div className="item">
+                  <h3><strong>New game awaits</strong></h3>
                   <br/ >
                   <button onClick={this.startGame}>Start Game</button>
               </div>
             )
           }
-          <br/>
-          <Instructions/>
+          </div>
       </div>
     );
   }
