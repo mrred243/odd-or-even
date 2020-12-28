@@ -42,7 +42,7 @@ class App extends Component {
           {
             this.props.gameStarted ? (
               <div className="item section__game">
-                  <div >
+                  <div style={{width: '50%'}} >
                   <h3><strong>Game is on!</strong></h3>
                   <button onClick={this.props.cancelGame}>Cancel Game</button>
                   <GameState />

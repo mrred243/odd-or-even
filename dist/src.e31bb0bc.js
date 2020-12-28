@@ -31921,12 +31921,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Card = function Card(_ref) {
   var cards = _ref.cards;
-  if (!cards[0]) return null;
+  if (!cards[0]) return /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      width: '50%'
+    }
+  });
   var _cards$ = cards[0],
       value = _cards$.value,
       suit = _cards$.suit,
       image = _cards$.image;
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, value, " of ", suit), /*#__PURE__*/_react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      width: '50%'
+    }
+  }, /*#__PURE__*/_react.default.createElement("h3", null, value, " of ", suit), /*#__PURE__*/_react.default.createElement("img", {
     src: image,
     alt: "card-image"
   }));
@@ -31990,12 +31998,12 @@ var Guess = function Guess(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "Will it be even or odd?"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
     onClick: setGuessEven,
     style: guess === 'even' ? {
-      border: '2px solid #43a047'
+      border: '1.5px solid rgba(30, 132, 242, 1)'
     } : null
   }, "Even"), ' ', /*#__PURE__*/_react.default.createElement("button", {
     onClick: setGuessOdd,
     style: guess === 'odd' ? {
-      border: '2px solid #43a047'
+      border: '1.5px solid rgba(30, 132, 242, 1)'
     } : null
   }, "Odd")));
 };
@@ -32243,7 +32251,11 @@ var App = /*#__PURE__*/function (_Component) {
         className: "main"
       }, /*#__PURE__*/_react.default.createElement(_Instructions.default, null), this.props.gameStarted ? /*#__PURE__*/_react.default.createElement("div", {
         className: "item section__game"
-      }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("strong", null, "Game is on!")), /*#__PURE__*/_react.default.createElement("button", {
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        style: {
+          width: '50%'
+        }
+      }, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("strong", null, "Game is on!")), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.props.cancelGame
       }, "Cancel Game"), /*#__PURE__*/_react.default.createElement(_GameState.default, null), /*#__PURE__*/_react.default.createElement(_Guess.default, null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Drawcard.default, null)), /*#__PURE__*/_react.default.createElement(_Card.default, null)) : /*#__PURE__*/_react.default.createElement("div", {
         className: "item"
@@ -32568,7 +32580,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63799" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63204" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

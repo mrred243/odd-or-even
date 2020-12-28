@@ -9,12 +9,12 @@ const Guess = ({ guess, setGuessEven, setGuessOdd }) => {
       <div>
         <button
           onClick={setGuessEven}
-          style={guess === 'even' ? { border: '2px solid #43a047'} : null}
+          style={guess === 'even' ? { border: '1.5px solid rgba(30, 132, 242, 1)'} : null}
         >Even</button>
         {' '}
         <button
           onClick={setGuessOdd}
-          style={guess === 'odd' ? { border: '2px solid #43a047'} : null}
+          style={guess === 'odd' ? { border: '1.5px solid rgba(30, 132, 242, 1)'} : null}
         >Odd</button>
       </div>
     </div>

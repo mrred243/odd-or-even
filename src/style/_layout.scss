@@ -1,0 +1,45 @@
+.header {
+  height: 200px;
+  color: #c6e2ff;
+  animation: neon 0.08s ease-in-out infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 30px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 40px rgba(30, 132, 242, 0.88),
+      0 0 64px rgba(30, 132, 242, 1);
+  }
+}
+
+.main {
+  display: flex;
+  padding-top: 30px;
+  max-height: 100%;
+}
+
+.instruction {
+  width: 30%;
+  border-right: 2px solid lightgrey;
+  padding: 0px 30px;
+}
+
+.item {
+  flex: 1;
+  display: table-cell;
+}
+
+.section__game {
+  display: flex;
+  justify-content: space-around;
+}
