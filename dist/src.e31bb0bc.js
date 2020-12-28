@@ -32261,7 +32261,14 @@ var App = /*#__PURE__*/function (_Component) {
         className: "item"
       }, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("strong", null, "New game awaits")), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.startGame
-      }, "Start Game"))));
+      }, "Start Game"))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer"
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        style: {
+          marginTop: 15,
+          fontSize: 12
+        }
+      }, "Code with \u2764\uFE0F by Thien-An Tran.")));
     }
   }]);
 
@@ -32580,7 +32587,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63204" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59374" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

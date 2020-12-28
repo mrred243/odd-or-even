@@ -68,15 +68,24 @@ body {
 .instruction {
   width: 30%;
   border-right: 2px solid lightgrey;
-  padding: 0px 30px; }
+  padding: 0px 30px;
+  text-align: left; }
 
 .item {
-  flex: 1;
-  display: table-cell; }
+  flex: 1; }
 
 .section__game {
   display: flex;
   justify-content: space-around; }
+
+.footer {
+  background-color: black;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

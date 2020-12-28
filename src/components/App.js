@@ -61,6 +61,9 @@ class App extends Component {
             )
           }
           </div>
+          <div className="footer" >
+              <p style={{marginTop: 15, fontSize: 12}}>Code with ❤️ by Thien-An Tran.</p>
+          </div>
       </div>
     );
   }
